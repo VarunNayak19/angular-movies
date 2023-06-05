@@ -1,0 +1,39 @@
+<app-header></app-header>
+<div class="movie-container">
+  <div class="top">
+    <div class="left">
+      <div class="name">{{ movie?.name }}</div>
+      <div class="rating">
+        <app-star-rating
+          [rating]="movie?.rating"
+          [isReadOnly]="true"
+        ></app-star-rating>
+        <span class="rating-value">{{ movie.rating }}</span>
+      </div>
+      <div class="cover-image">
+        <img [src]="movie?.cover" alt="" />
+      </div>
+    </div>
+    <div class="right">
+      <div class="title">Rate This Movie</div>
+      <div class="rating-form">
+        <div class="form-group">
+          <label for="username">User Name</label>
+          <input type="text" name="username" />
+        </div>
+        <div class="form-group">
+          <label for="rating">Rating</label>
+          <app-star-rating [rating]="0" [isReadOnly]="false"></app-star-rating>
+        </div>
+        <div class="form-group">
+          <label for="review"> Review</label>
+          <textarea name="review" cols="70" rows="5"></textarea>
+        </div>
+        <div class="btn-container">
+          <button class="btn btn-dark">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom"></div>
+</div>

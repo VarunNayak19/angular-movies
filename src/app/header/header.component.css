@@ -1,0 +1,40 @@
+.header-container {
+  width: 100%;
+  height: auto;
+  padding: 5px 30px;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  background-color: #ebcc6e;
+}
+.header-container .logo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 10px;
+  color: rgb(80, 48, 48);
+}
+.header-container .logo .logoimage {
+  width: 30px;
+  margin: 0 3px 0 3px;
+}
+.header-container .logout {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    font-size: 18px !important;
+  }
+  .logo .logoimage {
+    width: 18px !important;
+    margin: 1px !important;
+  }
+}/*# sourceMappingURL=header.component.css.map */

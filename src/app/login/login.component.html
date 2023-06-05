@@ -1,0 +1,56 @@
+<div class="login-container">
+  <img src="../../assets/images/film.png" alt="film" class="reel-image" />
+  <div class="logo">
+    <span class="logotext">R</span>
+    <img
+      src="../../assets/images/clipart1627195.png"
+      alt="logo"
+      class="logoimage"
+    />
+    <span>tten P</span>
+    <img
+      src="../../assets/images/clipart1627195.png"
+      alt="logo"
+      class="logoimage"
+    />
+    <span>tat</span>
+    <img
+      src="../../assets/images/clipart1627195.png"
+      alt="logo"
+      class="logoimage"
+    />
+    <span>es</span>
+  </div>
+  <div class="description">
+    Rotten Potatoes and the Potatometer score are the world’s most trusted
+    recommendation resources for quality entertainment. As the leading online
+    aggregator of movie and TV show reviews from critics, we provide fans with a
+    comprehensive guide to what’s Fresh – and what’s Rotten – in theaters and at
+    home. If you’re an entertainment fan looking for a recommendation, or to
+    share an opinion, you’ve come to the right place.
+  </div>
+  <div class="login-form">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        class="form-control"
+        id="username"
+        [(ngModel)]="username"
+      />
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password"
+        [(ngModel)]="password"
+      />
+    </div>
+    <div class="btn-container">
+      <button class="btn btn-dark" (click)="loginFn()">Login</button>
+      <span class="error">{{ errorMessage }}</span>
+    </div>
+  </div>
+</div>
